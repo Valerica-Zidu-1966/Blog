@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog LT Alexei Mateevici</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png">
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <a href="#">
+            <img class="logo" src="images/logo.png" />
+        </a>
+
+        <div class="salutare">
+
+            <span id="username"> </span>
+        </div>
+
+        <navbar id="navbar">
+            <a href="index.html">Home</a>
+            <a href="pages/postari.html">Postări</a>
+            <a id="postare-btn" href="pages/creare.html" class="header-btn">Postează <i class="fas fa-plus"></i></a>
+            <a id="login-btn" class="header-btn">Log in <i class="fas fa-sign-in-alt"></i></a>
+            <a id="logout-btn" class="header-btn gray-btn">Log Out <i class="fas fa-sign-out-alt"></i></a>
+
+        </navbar>
+        <span class="hamburger-menu" onclick="mobileMenu()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </header>
+
+    <main>
+        <section id="index-section">
+            <div class="main-content">
+                <h1>Blog LT Alexei Mateevici </h1>
+                <input type="text" id="search-input" placeholder="Caută postări">
+                <div id="search-btn"><i class="fas fa-search"></i></div>
+            </div>
+        </section>
+
+        <section id="lastposts-section">
+            <h1 class="centered">Ultimele postări</h1>
+
+            <div class="postari" id="postari">
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="year"></div>
+    </footer>
+</body>
+
+</html>
